@@ -2,6 +2,5 @@
 import './styles.css';
 
 // components
-export * from './card';
-
-export * from './button';
+export * from './card/card';
+export * from './button/button';
