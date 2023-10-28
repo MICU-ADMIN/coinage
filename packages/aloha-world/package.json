@@ -1,6 +1,6 @@
 {
   "name": "@mosqueicu/aloha-world",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "> TODO: description",
   "author": "hossam sulleman <93336567+hossam1231@users.noreply.github.com>",
   "homepage": "https://github.com/MICU-ADMIN/coinage#readme",
@@ -23,5 +23,5 @@
   "bugs": {
     "url": "https://github.com/MICU-ADMIN/coinage/issues"
   },
-  "gitHead": "27432e3033a6e466135bc3b9dc9228a3cbb8d7a2"
+  "gitHead": "e0b6f78f1828bbad9e6638f8363f3533d638afb1"
 }
