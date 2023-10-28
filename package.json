@@ -41,7 +41,9 @@
     "typescript": "^5.2.2"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "workshop",
+    "docs/*"
   ],
   "dependencies": {
     "next": "13.4.1",

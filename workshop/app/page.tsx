@@ -1,4 +1,5 @@
 import styles from './page.module.css';
+import isEven from '@mosqueicu/islamic_prayer_times';
 
 export default async function Index() {
   /*
