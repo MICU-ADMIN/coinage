@@ -12508,6 +12508,7 @@ __metadata:
     autoprefixer: ^10.4.16
     eslint-config-next: ^13.0.4
     next: ^13.5.2
+    postcss: ^8.4.31
     raf: ^3.4.1
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -13653,7 +13654,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.31, postcss@npm:^8.4.21, postcss@npm:^8.4.23, postcss@npm:~8.4.21":
+"postcss@npm:8.4.31, postcss@npm:^8.4.21, postcss@npm:^8.4.23, postcss@npm:^8.4.31, postcss@npm:~8.4.21":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
   dependencies:

@@ -6,6 +6,7 @@ export default function Page() {
     <>
       <Head>
         <title>Home</title>
+        <h1 className="text-3xl font-bold underline">Hello world!</h1>
       </Head>
       <HomeScreen />
     </>
