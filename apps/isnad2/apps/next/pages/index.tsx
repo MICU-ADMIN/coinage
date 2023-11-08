@@ -99,7 +99,7 @@ export default function Example() {
                     <div className="flex h-16 shrink-0 items-center">
                       <img
                         className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                        src="https://firebasestorage.googleapis.com/v0/b/islamicware-c2616.appspot.com/o/symbol_82%20Background%20Removed.svg?alt=media&token=f6abeb15-eeed-4f10-b5b1-26ea9aac3c21"
                         alt=" Company"
                       />
                     </div>
@@ -181,8 +181,8 @@ export default function Example() {
           <Card className="flex grow flex-col gap-y-5 overflow-y-auto border-r border-[#323232]  px-6">
             <div className="flex h-16 shrink-0 items-center">
               <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                className="h-10  mt-10 w-auto"
+                src="https://firebasestorage.googleapis.com/v0/b/islamicware-c2616.appspot.com/o/symbol_82%20Background%20Removed.svg?alt=media&token=f6abeb15-eeed-4f10-b5b1-26ea9aac3c21"
                 alt=" Company"
               />
             </div>
