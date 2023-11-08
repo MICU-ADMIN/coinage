@@ -3,6 +3,7 @@ import { useState } from 'react'
 import {
   AnimatePresence,
   Button,
+  H1,
   H5,
   SizableText,
   Stack,
@@ -164,12 +165,13 @@ const TabsAdvancedBackground = () => {
         </Tabs.List>
       </YStack>
       <AnimatePresence exitBeforeEnter enterVariant={enterVariant} exitVariant={exitVariant}>
-        <AnimatedYStack key={currentTab} animation="100ms" x={0} opacity={1} flex={1}>
-          <Tabs.Content value={currentTab} forceMount flex={1} justifyContent="center">
+        <AnimatedYStack key={currentTab} animation="100ms" x={0} opacity={1} flex={1} paddingTop="$10">
+          <Tabs.Content value={currentTab}  flex={1} justifyContent="center" paddingTop="$10">
             {/* <H5 textAlign="center">{currentTab}</H5> */}
-            <div className="pt-10">
+            <YStack paddingTop="$10">
+              {/* <H1> TEST </H1> */}
               <DemoCard />
-            </div>
+            </YStack>
           </Tabs.Content>
         </AnimatedYStack>
       </AnimatePresence>
