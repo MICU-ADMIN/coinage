@@ -32,7 +32,8 @@ import {
 import { navigation, narators } from './index.data'
 import { classNames } from './lib'
 import Content from './index.content'
-import { Card } from 'tamagui'
+import { Card, H5 } from 'tamagui'
+import { AccordionDemo } from './components/accordian'
 
 export default function Example() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -107,28 +108,29 @@ export default function Example() {
                         <li>
                           <ul role="list" className="-mx-2 space-y-1">
                             {navigation.map((item) => (
-                              <li key={item.name}>
-                                <a
-                                  href={item.href}
-                                  className={classNames(
-                                    item.current
-                                      ? 'bg-gray-50 text-indigo-600'
-                                      : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',
-                                    'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
-                                  )}
-                                >
-                                  <item.icon
-                                    className={classNames(
-                                      item.current
-                                        ? 'text-indigo-600'
-                                        : 'text-gray-400 group-hover:text-indigo-600',
-                                      'h-6 w-6 shrink-0'
-                                    )}
-                                    aria-hidden="true"
-                                  />
-                                  {item.name}
-                                </a>
-                              </li>
+                              // <li key={item.name}>
+                              //   <a
+                              //     href={item.href}
+                              //     className={classNames(
+                              //       item.current
+                              //         ? 'bg-gray-50 text-indigo-600'
+                              //         : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',
+                              //       'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
+                              //     )}
+                              //   >
+                              //     <item.icon
+                              //       className={classNames(
+                              //         item.current
+                              //           ? 'text-indigo-600'
+                              //           : 'text-gray-400 group-hover:text-indigo-600',
+                              //         'h-6 w-6 shrink-0'
+                              //       )}
+                              //       aria-hidden="true"
+                              //     />
+                              //     {item.name}
+                              //   </a>
+                              // </li>
+                              <AccordionDemo />
                             ))}
                           </ul>
                         </li>
@@ -187,36 +189,14 @@ export default function Example() {
             <nav className="flex flex-1 flex-col">
               <ul role="list" className="flex flex-1 flex-col gap-y-7">
                 <li>
-                  <ul role="list" className="-mx-2 space-y-1">
-                    {navigation.map((item) => (
-                      <li key={item.name}>
-                        <a
-                          href={item.href}
-                          className={classNames(
-                            item.current
-                              ? 'bg-gray-50 text-indigo-600'
-                              : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',
-                            'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
-                          )}
-                        >
-                          <item.icon
-                            className={classNames(
-                              item.current
-                                ? 'text-indigo-600'
-                                : 'text-gray-400 group-hover:text-indigo-600',
-                              'h-6 w-6 shrink-0'
-                            )}
-                            aria-hidden="true"
-                          />
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                  <AccordionDemo />
                 </li>
                 <li>
-                  <div className="text-xs font-semibold leading-6 text-gray-400"> Narators</div>
-                  <ul role="list" className="-mx-2 mt-2 space-y-1">
+                  <H5 color="grey" fontWeight={800} size={'$2'}>
+                    {' '}
+                    Narators
+                  </H5>
+                  <ul role="list" className="mt-10 space-y-1">
                     {narators.map((narator) => (
                       <li key={narator.name}>
                         <a
@@ -225,7 +205,7 @@ export default function Example() {
                             narator.current
                               ? 'bg-gray-50 text-indigo-600'
                               : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50',
-                            'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
+                            'group flex gap-x-3  rounded-md p-2 text-sm leading-6 font-semibold'
                           )}
                         >
                           <span
