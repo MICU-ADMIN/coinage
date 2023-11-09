@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import HadithView from './components/hadithView/HadithView';
 import {
   AnimatePresence,
   Button,
@@ -168,10 +168,11 @@ const TabsAdvancedBackground = () => {
         <AnimatedYStack key={currentTab} animation="100ms" x={0} opacity={1} flex={1} paddingTop="$10">
           <Tabs.Content value={currentTab}  flex={1} justifyContent="center" paddingTop="$10">
             {/* <H5 textAlign="center">{currentTab}</H5> */}
-            <YStack paddingTop="$10">
+            <div paddingTop="$10">
               {/* <H1> TEST </H1> */}
               <DemoCard />
-            </YStack>
+            
+            </div>
           </Tabs.Content>
         </AnimatedYStack>
       </AnimatePresence>

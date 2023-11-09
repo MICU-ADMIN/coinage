@@ -6,7 +6,7 @@ import React, { Suspense } from 'react';
 // import Search from '../../search';
 // import UsersTable from '../../table';
 import IsnadViewer from '../IsnadViewer/IsnadViewer';
-import Loading from './loading';
+import Loading from '../hadithView/loading';
 // import { addCacheValue, getCacheValue } from '../../_lib/cache';
 
 function HadithView() {
@@ -30,13 +30,13 @@ function HadithView() {
 
   const fetchHadith = async (collectionId: string, bookId: string) => {
     try {
-      const url = `/api/hadith?collectionId=${collectionId}&bookId=${bookId}`;
+      const url = `https://billowing-shape-7372.fly.dev/ahadith/filter?collectionId=${collectionId}&bookId=${bookId}`;
 
-      const cachedReq = await getCacheValue(url);
-      if (cachedReq) {
-        setLoading(false);
-        return setCurrentData(cachedReq);
-      }
+      // const cachedReq = await getCacheValue(url);
+      // if (cachedReq) {
+      //   setLoading(false);
+      //   return setCurrentData(cachedReq);
+      // }
 
       const res = await fetch(url, {
         method: 'GET',
@@ -48,7 +48,7 @@ function HadithView() {
       setLoading(false);
       if (!data.errors) {
         setCurrentData(data);
-        addCacheValue(data, url);
+        // addCacheValue(data, url);
       }
     } catch (e) {
       setLoading(false);
